@@ -1,0 +1,47 @@
+--Detalle de los mo_activity_reason de la MOP10213
+
+SELECT * FROM dbo.MOP10213
+WHERE MANUFACTUREORDER_I ='OP000005692 '
+AND MO_ACTIVITY_REASON_I=53
+--------------------------
+CASE MOP10213.MO_ACTIVITY_REASON_I
+WHEN 17 THEN 'Scheduled' --Odd but sometimes this value is used
+WHEN 31 THEN 'Status Change'
+WHEN 32 THEN 'Allocate'
+WHEN 33 THEN 'Reverse Allocate'
+WHEN 34 THEN 'Issue'
+WHEN 35 THEN 'Reverse Issue'
+WHEN 36 THEN 'Scrap'
+WHEN 37 THEN 'Reverse Scrap'
+WHEN 38 THEN 'Raw Material Relief'
+WHEN 39 THEN 'Finished Good Post'
+WHEN 40 THEN 'Reverse Finished Good Post'
+WHEN 41 THEN 'Close'
+WHEN 42 THEN 'Complete'
+WHEN 43 THEN 'Post Variance From WIP'
+WHEN 44 THEN 'Labor Da
+
+WHEN MO_ACTIVITY_REASON_I = 31 THEN '31 - Status Change'
+WHEN MO_ACTIVITY_REASON_I = 32 THEN '32 - Allocate'
+WHEN MO_ACTIVITY_REASON_I = 33 THEN '33 - Reverse Allocate'
+WHEN MO_ACTIVITY_REASON_I = 34 THEN '34 - Issue'
+WHEN MO_ACTIVITY_REASON_I = 35 THEN '35 - Reverse Issue'
+WHEN MO_ACTIVITY_REASON_I = 36 THEN '36 - Scrap'
+WHEN MO_ACTIVITY_REASON_I = 37 THEN '37 - Reverse Scrap'
+WHEN MO_ACTIVITY_REASON_I = 38 THEN '38 - Raw Material Relief'
+WHEN MO_ACTIVITY_REASON_I = 39 THEN '39 - Finished Good Post'
+WHEN MO_ACTIVITY_REASON_I = 40 THEN '40 - Reverse Finished Good Post'
+WHEN MO_ACTIVITY_REASON_I = 41 THEN '41 - Close'
+WHEN MO_ACTIVITY_REASON_I = 42 THEN '42 - Complete'
+WHEN MO_ACTIVITY_REASON_I = 43 THEN '43 - Post Variance From WIP'
+WHEN MO_ACTIVITY_REASON_I = 44 THEN '44 - Labor Data Collection'
+WHEN MO_ACTIVITY_REASON_I = 45 THEN '45 - Machine Data Collection'
+WHEN MO_ACTIVITY_REASON_I = 46 THEN '46 - Outsourced Costs'
+WHEN MO_ACTIVITY_REASON_I = 47 THEN '47 - Scheduled'
+WHEN MO_ACTIVITY_REASON_I = 48 THEN '48 - Picklist Built'
+WHEN MO_ACTIVITY_REASON_I = 49 THEN '49 - Change Working Routing'
+WHEN MO_ACTIVITY_REASON_I = 50 THEN '50 - Financial Activity'
+WHEN MO_ACTIVITY_REASON_I = 53 THEN '53 - Unknown'
+WHEN MO_ACTIVITY_REASON_I = 54 THEN '54 - Unknown'
+WHEN MO_ACTIVITY_REASON_I = 55 THEN '55 - Unknown'
+WHEN MO_ACTIVITY_REASON_I = 56 THEN '56 - Unknown'
